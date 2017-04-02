@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Content Scaler",
+  "description": "This extension scales HTML content if the width of viewport was fixed.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "image/icon/16.png",
+    "64": "image/icon/64.png"
+  },
+  "page_action": {
+    "default_icon": "image/icon/16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*",
+        "file://*/*"
+      ],
+      "js": [
+        "js/jquery-2.2.3.min.js",
+        "js/content_scripts.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

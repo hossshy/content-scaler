@@ -25,7 +25,9 @@ $(function() {
                 var scale = 1 / (vw / w);
                 $("html").css({
                     "transform-origin": "top left",
-                    "transform": "scale(" + scale + ")"
+                    "transform": "scale(" + scale + ")",
+                    "overflow-x": "hidden",
+                    "overflow-y": "visible"
                 });
             }
         }

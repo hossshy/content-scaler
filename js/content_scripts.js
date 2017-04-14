@@ -24,7 +24,8 @@ $(function() {
             if ( vw > w ) {
                 var scale = 1 / (vw / w);
                 $("html").css({
-                    "zoom": scale,
+                    "transform-origin": "top left",
+                    "transform": "scale(" + scale + ")",
                     "overflow-x": "hidden",
                     "overflow-y": "visible"
                 });

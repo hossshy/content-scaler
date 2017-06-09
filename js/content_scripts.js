@@ -17,13 +17,14 @@ $(function() {
         }
         return -1;
     }
-
+    var $html = $("html");
     function scaleContent() {
+        console.log("exec scaleContent");
         if (vw >= 0) {
             var w = document.documentElement.clientWidth;
             if ( vw > w ) {
                 var scale = 1 / (vw / w);
-                $("html").css({
+                $html.css({
                     "transform-origin": "top left",
                     "transform": "scale(" + scale + ")",
                     "overflow-x": "hidden",
@@ -31,9 +32,15 @@ $(function() {
                 });
             }
         }
+        $html.css({"visibility": "visible"});
     }
-
     var vw = getViewportWidth();
-    $(window).resize(scaleContent);
-    scaleContent();
+    // special condition for my company.
+    if ($('#vObj').length) {
+        console.log('vObj found.');
+        $html.css({"visibility": "hidden"});
+        setTimeout(scaleContent, 3000);
+    } else {
+        $(window).bind('load', scaleContent);
+    }
 });

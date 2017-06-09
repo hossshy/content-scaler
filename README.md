@@ -3,6 +3,10 @@ This extension scales HTML content if the width of viewport was fixed.
 
 ## History
 
+### Version 1.0.4
+
+Implemented special cases for my company.
+
 ### Version 1.0.3
 
 Fixed bug and use `scale` instead of `zoom`. 

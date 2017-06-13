@@ -3,6 +3,10 @@ This extension scales HTML content if the width of viewport was fixed.
 
 ## History
 
+### Version 1.0.5
+
+Re-implemented resize.
+
 ### Version 1.0.4
 
 Implemented special cases for my company.

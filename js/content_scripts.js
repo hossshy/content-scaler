@@ -34,6 +34,8 @@ $(function() {
         }
         $html.css({"visibility": "visible"});
     }
+    // リサイズ時の登録
+    $(window).resize(scaleContent);
     var vw = getViewportWidth();
     // special condition for my company.
     if ($('#vObj').length) {

@@ -41,7 +41,7 @@ $(function() {
     if ($('#vObj').length) {
         console.log('vObj found.');
         $html.css({"visibility": "hidden"});
-        setTimeout(scaleContent, 3000);
+        setTimeout(scaleContent, 5000);
     } else {
         $(window).bind('load', scaleContent);
     }

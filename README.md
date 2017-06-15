@@ -3,6 +3,10 @@ This extension scales HTML content if the width of viewport was fixed.
 
 ## History
 
+### Version 1.0.6
+
+Upgraded jquery.
+
 ### Version 1.0.5
 
 Re-implemented resize.

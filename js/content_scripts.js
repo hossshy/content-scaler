@@ -43,6 +43,6 @@ $(function() {
         $html.css({"visibility": "hidden"});
         setTimeout(scaleContent, 5000);
     } else {
-        $(window).bind('load', scaleContent);
+        scaleContent();
     }
 });

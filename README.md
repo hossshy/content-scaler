@@ -11,6 +11,10 @@ Upgraded jquery.
 
 Re-implemented resize.
 
+### Version 1.0.7
+
+Added exclude_matches.
+
 ### Version 1.0.4
 
 Implemented special cases for my company.

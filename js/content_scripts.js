@@ -38,11 +38,10 @@ $(function() {
     $(window).resize(scaleContent);
     var vw = getViewportWidth();
     // special condition for my company.
-    if ($('#vObj').length) {
+    var $vObj = $('#vObj');
+    if ($vObj.length) {
         console.log('vObj found.');
-        $html.css({"visibility": "hidden"});
-        setTimeout(scaleContent, 5000);
-    } else {
-        scaleContent();
+        $vObj.css('display', 'none');
     }
+    scaleContent();
 });

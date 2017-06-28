@@ -3,6 +3,10 @@ This extension scales HTML content if the width of viewport was fixed.
 
 ## History
 
+### Version 1.0.8
+
+Hide vObj element.
+
 ### Version 1.0.6
 
 Upgraded jquery.

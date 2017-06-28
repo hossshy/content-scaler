@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Content Scaler",
   "description": "This extension scales HTML content if the width of viewport was fixed.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "icons": {
     "16": "image/icon/16.png",
     "64": "image/icon/64.png"
